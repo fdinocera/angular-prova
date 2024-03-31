@@ -1,0 +1,22 @@
+
+
+
+
+
+
+<div class="row text-white">
+    <div class="col text-center">
+        <button class="btn  h1 sfondo" (click)="lancio()">Lancia il dado!</button>
+        <div>lancioNelComponent: {{lancioNelComponent}}</div>
+        <div>lancioNelService: {{lancioNelService}}</div>
+    </div>
+
+
+    <div class="col">
+        <app-classifica-giocatore [arrayLanci]="arrayLanci" [totalePunti]="totalePunti"></app-classifica-giocatore>
+    </div>
+
+    <div class="col">
+        <app-classifica-computer [arrayLanci]="pcArrayLanci" [totalePunti]="pcTotalePunti"></app-classifica-computer>
+    </div>
+</div>
